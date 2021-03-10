@@ -1,0 +1,1 @@
+alter table articles add column if not exists cover_image_id bigint references assets(id) null;

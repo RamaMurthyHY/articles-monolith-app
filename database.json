@@ -1,0 +1,28 @@
+{
+  "default": "dev",
+  "sql-file": true,
+  "dev": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": "root",
+    "host": "localhost",
+    "database": "reader",
+    "port": "5432"
+  },
+  "stage": {
+    "driver": "pg",
+    "user": { "ENV": "DB_USER" },
+    "password": { "ENV": "DB_PASSWORD" },
+    "host": { "ENV": "DB_HOST" },
+    "database": { "ENV": "DB_NAME" },
+    "port": { "ENV": "DB_PORT" }
+  },
+  "prod": {
+    "driver": "pg",
+    "user": { "ENV": "DB_USER" },
+    "password": { "ENV": "DB_PASSWORD" },
+    "host": { "ENV": "DB_HOST" },
+    "database": { "ENV": "DB_NAME" },
+    "port": { "ENV": "DB_PORT" }
+  }
+}

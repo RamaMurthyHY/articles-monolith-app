@@ -1,0 +1,13 @@
+body {
+  min-width: 375px;
+}
+.layoutBody {
+  max-width: 65rem;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .layoutBody {
+    padding: 0 1.5rem;
+    padding-bottom: 1rem;
+  }
+}

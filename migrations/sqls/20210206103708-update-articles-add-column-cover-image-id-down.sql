@@ -1,0 +1,1 @@
+alter table articles drop column if exists cover_image_id;

@@ -1,0 +1,19 @@
+Schema decision 
+Quad code (what is Cors in process)
+cluster
+load balancing
+what is http and https
+how express works
+rest api convention
+
+
+
+{
+    "first_name": "Update",
+    "last_name": "Thota",
+    "email_id": "updated@gmail.com",
+    "phone": "8748832145",
+    "password": "123456789",
+    "gender": "MALE",
+    "dob": "1991/05/18"
+}

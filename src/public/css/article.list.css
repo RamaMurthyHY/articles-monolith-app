@@ -1,0 +1,33 @@
+.create-button-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.create-new-article-link {
+  color: #fff;
+}
+.create-new-article-link:hover {
+  color: #fff;
+}
+.article-page-heading {
+  font-size: 4rem;
+  margin: 3rem 0;
+  font-weight: 600;
+}
+
+.article-list-item {
+  margin-bottom: 1rem;
+  display: flex;
+}
+.article-list-title {
+  cursor: pointer;
+  font-weight: 600;
+  font-style: italic;
+}
+.article-list-number {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.article-list-description {
+  display: inline;
+}

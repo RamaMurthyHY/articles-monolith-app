@@ -1,0 +1,21 @@
+.add-article-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.add-article-input input {
+  margin-bottom: 1rem;
+}
+.add-article-content {
+  margin-top: 2rem;
+}
+.create-button-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.feature-image-uploader {
+  margin-bottom: 1rem;
+}

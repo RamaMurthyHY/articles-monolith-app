@@ -1,0 +1,30 @@
+.article-title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 2rem 0;
+}
+.article-description {
+  font-weight: 600;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.article-author {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.article-content {
+  text-align: justify;
+}
+.create-button-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.create-new-article-link {
+  color: #fff;
+}
+.create-new-article-link:hover {
+  color: #fff;
+}

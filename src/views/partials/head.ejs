@@ -1,0 +1,18 @@
+<meta charset="UTF-8" />
+<title><%= pageTitle %></title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/css/layout.css" type="text/css" />
+<link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css" />
+<% if (page === 'article.list') { %>
+<link href="/css/article.list.css" rel="stylesheet" type="text/css" />
+<% } %> <% if (page === 'article.view') { %>
+<link href="/css/article.view.css" rel="stylesheet" type="text/css" />
+<% } %> <% if (page === 'article.add' || page === 'article.edit') { %>
+<link href="/css/article.add.css" rel="stylesheet" type="text/css" />
+<% } %>
