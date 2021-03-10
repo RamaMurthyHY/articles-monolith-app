@@ -91,20 +91,11 @@ module.exports = {
   list: async (req, res) => {
     try {
       const result = await userModel.getAll();
-      const bodyStr = result
-        .map((user) => {
-          return `<tr><td>${user.id}</td><td>${user.first_name}</td><td>${user.last_name}</td><td>${user.email}</td></tr>`;
-        })
-        .join('');
-      fs.readFile(
-        path.join(process.cwd(), '/src/views/users/list.html'),
-        'utf-8',
-        (error, html) => {
-          if (error) res.status(500).json({ error: true, message: error });
-          const alteredHtml = html.replace('{{bodyStr}}', bodyStr);
-          res.send(alteredHtml);
-        },
-      );
+      res.render('users/user.list.ejs', {
+        users: result,
+        pageTitle: 'Users list',
+        page: 'user.list',
+      });
     } catch (error) {
       console.error('User controller in GetAll method', error);
       res.status(500).json({ error: true, message: error.message });
@@ -114,15 +105,11 @@ module.exports = {
     try {
       const { id } = req.params;
       const result = await userModel.getById(id);
-      fs.readFile(
-        path.join(process.cwd(), '/src/views/users/view.html'),
-        'utf-8',
-        (error, html) => {
-          if (error) res.status(500).json({ error: true, message: error });
-          const alteredHtml = template(result, html);
-          res.send(alteredHtml);
-        },
-      );
+      res.render('users/user.view.ejs', {
+        user: result,
+        pageTitle: 'User view',
+        page: 'user.view',
+      });
     } catch (error) {
       console.error('User controller in view method', error);
       res.status(500).json({ error: true, message: error.message });
