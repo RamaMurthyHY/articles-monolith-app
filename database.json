@@ -4,9 +4,9 @@
   "dev": {
     "driver": "pg",
     "user": "postgres",
-    "password": "root",
-    "host": "localhost",
-    "database": "reader",
+    "password": "articlesmonolith",
+    "host": "articlesmonolithdb.cprga929qpdr.us-east-1.rds.amazonaws.com",
+    "database": "articlesmonolithdb",
     "port": "5432"
   },
   "stage": {

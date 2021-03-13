@@ -1,0 +1,11 @@
+.update-user-heading {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.update-user-input {
+  margin-bottom: 1rem;
+}
+.user-update-button {
+  display: flex;
+  justify-content: flex-end;
+}
